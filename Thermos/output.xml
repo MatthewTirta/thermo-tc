@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.2 on win32)" generated="2024-06-01T22:47:54.009465" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1" source="C:\Users\matth\OneDrive\Desktop\Automation\Thermos\TestCase\TC1.robot">
+<test id="s1-t1" name="Thermos Register" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:54.247178" level="INFO">Opening browser 'Chrome' to base url 'https://thermos.com/account/register'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-01T22:47:54.246182" elapsed="4.868253"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.114435" elapsed="0.087128"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.204061" level="INFO">Clicking element 'name=customer[name]'.</msg>
+<arg>name=customer[name]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.204061" elapsed="0.225374"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.431431" level="INFO">Typing text 'Matthew Tirta' into text field 'name=customer[name]'.</msg>
+<arg>name=customer[name]</arg>
+<arg>${FULL_NAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.430434" elapsed="0.119839"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.551269" level="INFO">Clicking element 'name=customer[email]'.</msg>
+<arg>name=customer[email]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.551269" elapsed="0.064030"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.615299" level="INFO">Typing text 'MatthewTirta@example.com' into text field 'name=customer[email]'.</msg>
+<arg>name=customer[email]</arg>
+<arg>${EMAIL}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.615299" elapsed="0.117990"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.733289" level="INFO">Clicking element 'name=customer[phone]'.</msg>
+<arg>name=customer[phone]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.733289" elapsed="0.040988"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.775767" level="INFO">Typing text '1234567890' into text field 'name=customer[phone]'.</msg>
+<arg>name=customer[phone]</arg>
+<arg>${PHONE_NUMBER}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.774277" elapsed="0.080081"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.854358" level="INFO">Clicking element 'name=customer[password]'.</msg>
+<arg>name=customer[password]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.854358" elapsed="0.043232"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.898587" level="INFO">Typing text 'MatthewTirta' into text field 'name=customer[password]'.</msg>
+<arg>name=customer[password]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.897590" elapsed="0.089089"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.987676" level="INFO">Executing JavaScript:
+window.scrollBy(0, 200)
+Without any arguments.</msg>
+<arg>window.scrollBy(0, 200)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.986679" elapsed="0.007511"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:47:59.995189" level="INFO">Clicking element 'name=customer[password_confirmation]'.</msg>
+<arg>name=customer[password_confirmation]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:47:59.994190" elapsed="0.072072"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:48:00.068257" level="INFO">Typing text 'MatthewTirta' into text field 'name=customer[password_confirmation]'.</msg>
+<arg>name=customer[password_confirmation]</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:48:00.067261" elapsed="0.147809"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-01T22:48:00.217392" level="INFO">Clicking button 'css=#create_customer button[type="submit"]'.</msg>
+<arg>css=#create_customer button[type="submit"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-01T22:48:00.216395" elapsed="6.931471"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-01T22:48:07.148863" elapsed="2.259230"/>
+</kw>
+<status status="PASS" start="2024-06-01T22:47:54.245182" elapsed="15.162911"/>
+</test>
+<status status="PASS" start="2024-06-01T22:47:54.010463" elapsed="15.399625"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
